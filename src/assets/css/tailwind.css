@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /* :::: Generic classes pokedex */
+    .gb-cover {
+        @apply absolute top-0 left-0 h-full w-full;
+    }
+    .gb-flex-center{
+        @apply flex items-center justify-center;
+    }
+    .gb-absolute-center{
+        @apply absolute top-0 left-0 bottom-0 right-0 m-auto;
+    }
+    .gb-absolute-x-center{
+        @apply absolute left-0 right-0 mx-auto;
+    }
+    .gb-absolute-y-center{
+        @apply absolute top-0 bottom-0 my-auto;
+    }
+    .gb-transition{
+        @apply transition ease-out duration-300;
+    }
+    .gb-transition-slow{
+        @apply transition ease-out duration-500;
+    }
+
+    .gb-modal{
+        @apply gb-cover gb-flex-center gb-transition bg-gray-900 bg-opacity-70;
+    }
+
+    
+    /* :: Button classes :: */
+    .gb-btn-normal{
+        @apply appearance-none px-4 hover:shadow hover:bg-opacity-90 rounded-2xl outline-none gb-transition;
+    }
+
+    /* modifiers */
+    .gb-btn-normal--secondary{
+        @apply bg-secondary font-semibold text-white;
+    }
+    .gb-btn-normal--tertiary{
+        @apply bg-tertiary font-semibold text-white;
+    }
+    .gb-btn-normal--gray{
+        @apply bg-gray-200 font-semibold text-gray-900;
+    }
+
+    /* :: Input classes :: */
+    .gb-input-normal{
+        @apply appearance-none px-4 hover:shadow focus:shadow rounded-2xl outline-none gb-transition;
+    }
+    .gb-input-normal--gray{
+        @apply bg-gray-100 hover:bg-white focus:bg-white;
+    }
+
+
+    /* :: special classes :: */
+
+    .gb-collection-contentSearch{
+        @apply absolute top-0 left-0 w-full h-20 gb-flex-center px-5;
+    }
+    .gb-collection-contentItems{
+        @apply w-full md:w-1/2 mx-auto;
+    }
+    .gb-collection-item{
+        @apply flex mb-1 rounded-md hover:shadow bg-white hover:bg-gray-600 hover:text-white cursor-pointer gb-transition-slow;
+    }
+
+    .gb-collection-btnItem{
+        @apply appearance-none p-4 flex-1 text-left;
+    }
+
+    .gb-collection-contentOptions{
+        @apply gb-flex-center absolute bottom-0 left-0 w-full h-20 px-5;
+    }
+
+    .gb-collection-btnOptions{
+        @apply gb-flex-center gb-btn-normal w-1/2 sm:w-44 h-11;
+    }
+
+    .gb-collection-contentSpecification{
+        @apply relative w-11/12 md:w-96 pt-48 rounded-3xl bg-gray-50;
+    }
+}
