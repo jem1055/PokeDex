@@ -2,7 +2,7 @@
 
 ## Stack
 
-Para el desarollo de esta webApp tuve la idea de implementar las siguientes tecnologias:
+Para el desarollo de esta webApp tuve la idea de implementar conlas siguientes tecnologias:
 
 - Vue.js 2 y Vuex
 - Tailwind.css
